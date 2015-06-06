@@ -5,22 +5,11 @@ os: linux
 
 
 files:
-  - source: scripts/
-    destination: /root/scripts/
-
   - source: index.html
     destination: /var/www/html/index.html
 
 
 permissions:
-  - object: /root/scripts/
-    pattern: "*"
-    owner: root
-    group: root
-    mode: 700
-    type:
-      - file
-
   - object: /var/www/html/index.html
     owner: root
     group: root
@@ -30,13 +19,13 @@ permissions:
 
 
 hooks:
-#  ApplicationStop:
-#    - location: /root/scripts/stop.sh
+  ApplicationStop:
+    - location: scripts/stop.sh
 
   ApplicationStart:
-    - location: /root/scripts/start.sh
+    - location: scripts/start.sh
 
   ValidateService:
-    - location: /root/scripts/validate.sh
+    - location: scripts/validate.sh
 
 
