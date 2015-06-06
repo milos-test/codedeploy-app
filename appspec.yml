@@ -25,10 +25,10 @@ permissions:
 
 hooks:
   ApplicationStop:
-    - location /root/scripts/stop.sh
+    - location: /root/scripts/stop.sh
   ApplicationStart:
-    - location /root/scripts/start.sh
+    - location: /root/scripts/start.sh
   ValidateService:
-    - location /root/scripts/validate.sh
+    - location: /root/scripts/validate.sh
 
 
