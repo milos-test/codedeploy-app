@@ -6,7 +6,7 @@ os: linux
 
 files:
   - source: index.html
-    destination: /var/www/html/index.html
+    destination: /var/www/html/
 
 
 permissions:
