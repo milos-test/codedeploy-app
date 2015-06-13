@@ -7,7 +7,7 @@ os: linux
 files:
   - source: index.html
     destination: /var/www/html/
-  - source: dest
+  - source: mydir
     destination: /var/www/html/
 
 
