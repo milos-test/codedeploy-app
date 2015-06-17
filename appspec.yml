@@ -8,7 +8,7 @@ files:
   - source: index.html
     destination: /var/www/html/
   - source: mydir
-    destination: /var/www/html/
+    destination: /var/www/html/mydir
 
 
 permissions:
