@@ -29,5 +29,6 @@ hooks:
 
   ValidateService:
     - location: scripts/validate.sh
+      runas: ec2-user
 
 
